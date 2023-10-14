@@ -22,7 +22,9 @@ public class Employee implements Serializable {
 
     private String name;
 
+//这条也不在DTO中
     private String password;
+
 
     private String phone;
 
@@ -30,16 +32,17 @@ public class Employee implements Serializable {
 
     private String idNumber;
 
+
+//    之后的不在DTO中
+
     private Integer status;
 
     //@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime createTime;
-
     //@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime updateTime;
 
     private Long createUser;
-
     private Long updateUser;
 
 }
